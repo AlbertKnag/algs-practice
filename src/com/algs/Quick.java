@@ -1,6 +1,10 @@
 package com.algs;
 
-
+/**
+ * 快速排序
+ * @author YiYing
+ * @data 2017年4月30日 下午10:33:10
+ */
 public class Quick {
 
 	public static void sort(Comparable[] a) {
