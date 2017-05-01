@@ -17,3 +17,6 @@
 
 - <a href="http://muchstudy.com/2017/04/29/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%9505%EF%BC%9A%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/">排序算法05：归并排序</a>
 
+- <a href="http://muchstudy.com/2017/04/29/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%9506%EF%BC%9A%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/">排序算法06：快速排序</a>
+
+- <a href="http://muchstudy.com/2017/04/30/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%9507%EF%BC%9A%E4%B8%89%E5%90%91%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/">排序算法07：三向快速排序</a>
