@@ -1,4 +1,4 @@
-package com.algs;
+package com.algs.sort;
 
 /**
  * 快速排序

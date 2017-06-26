@@ -1,4 +1,4 @@
-package com.algs;
+package com.algs.sort;
 
 public class Merge {
 

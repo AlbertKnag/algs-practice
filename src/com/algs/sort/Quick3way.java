@@ -1,4 +1,4 @@
-package com.algs;
+package com.algs.sort;
 
 /**
  * 三向快速排序（适用于重复元素较多的情况）

@@ -1,21 +1,27 @@
-package com.algs;
+package com.algs.sort;
 
-public class Bubble {
+public class Shell {
 	
 	/**
-	 * 冒泡排序实现逻辑
+	 * 希尔排序实现逻辑
 	 * @param arr
 	 */
 	public static void sort(int[] arr){
 		int len = arr.length;
-		//每遍历一次就把最大的沉到了底部
-        for (int i = 0; i < len; i++) {
-            for (int j = 0; j < len-i-1; j++) {
-            	//如果后面一个元素小于前一个则交换位置
-                if (less(arr[j+1], arr[j])){
-                	exchange(arr, j+1, j);
-                };
-            }
+		int h	= 1;
+		//自动生成序列。步长序列为1、4、13、40、121、364、1093......
+		while(h<len/3){
+			h = 3*h+1;
+		}
+        while(h>=1){
+        	for(int i=h;i<len;i++){
+        		//当h>1时，实际上是把后面的一次性移动到前面。最后h为1时实际上就是对arr进行插入排序
+        		for(int j=i;j>=h && less(arr[j],arr[j-h]);j -= h){
+        			exchange(arr,j,j-h);
+        		}
+        	}
+        	//每执行一次，步长依次递减，最终步长递减为1。
+        	h = h/3;
         }
 	}
 	
@@ -49,7 +55,7 @@ public class Bubble {
 	
 	public static void main(String[] args) {
 		int[] arr = {4,5,6,0,3,5,21,7,9,0,1};
-		Bubble.sort(arr);
-		Bubble.show(arr);
+		Shell.sort(arr);
+		Shell.show(arr);
 	}
 }
